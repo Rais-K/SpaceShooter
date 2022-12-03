@@ -29,14 +29,16 @@ public class GeradorInimigos : MonoBehaviour
     {
         esperaInimigo -= Time.deltaTime;
 
-
+        //Checando se a espera ja zerou
         if (esperaInimigo < 0f)
         {
 
-            esperaInimigo = tempoEspera;
-
             //criando um inimigo
-            Instantiate(inimigos[0], transform.position, transform.rotation); 
+            Vector3 posicao = new Vector3(Random.Range(-8f, 8f), Random.Range(6f, 16f), 0f);
+            Instantiate(inimigos[0], posicao, transform.rotation);
+
+            //reiniciando a espera
+            esperaInimigo = tempoEspera;
         }
     }
 }
