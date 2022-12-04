@@ -368,7 +368,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4703739808977656891, guid: a2e0a9b935d3f88448176d441d98d1b2, type: 3}
       propertyPath: tempoEspera
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4703739808977657796, guid: a2e0a9b935d3f88448176d441d98d1b2, type: 3}
       propertyPath: m_RootOrder
